@@ -21,6 +21,9 @@ const ivan = {
         },
         saludar:function(){
                 console.log("Hola");
+        },
+        decirMiNombre: function() {
+                console.log(`Hola me llamo ${this.nombre}, ${this.apellido}`);
         }
 
 }
@@ -31,3 +34,12 @@ console.log(ivan["apellido"]);
 
 console.log(ivan.nombre);
 console.log(ivan.apellido);
+console.log(ivan.idiomas[1]);
+console.log(ivan.contacto.facebook);
+ivan.saludar();
+ivan.decirMiNombre();
+
+console.log(Object.keys(ivan));
+console.log(Object.values(ivan));
+//ver si existe
+console.log(ivan.hasOwnProperty("nombre")); 
